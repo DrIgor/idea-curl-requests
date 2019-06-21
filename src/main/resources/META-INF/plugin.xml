@@ -1,0 +1,30 @@
+<idea-plugin>
+  <id>drigor.curl2idea</id>
+  <name>curl2idea</name>
+  <version>1.0</version>
+  <vendor email="24thbit@gmail.com" url="https://github.com/DrIgor">DrIgor</vendor>
+
+  <!-- todo -->
+  <description><![CDATA[
+      Converts curl command to HTTP Requests syntax
+  ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>com.jetbrains.restClient</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <copyPastePreProcessor implementation="drigor.PostProcessor"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
