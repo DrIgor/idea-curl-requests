@@ -13,7 +13,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
-    testCompile("junit", "junit", "4.12")
+    testCompile(group = "org.junit.jupiter", name = "junit-jupiter", version = "5.4.2")
+    testCompile(group = "com.google.truth", name = "truth", version = "0.45")
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
